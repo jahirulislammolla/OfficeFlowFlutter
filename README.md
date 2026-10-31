@@ -16,3 +16,5 @@ flutter run
 ```
 
 প্রথমে [Step 1 — Setup](docs/01-setup.md) পড়ুন এবং নিজে project setup করুন। তারপর প্রতিটি step শেষ করে পরীক্ষা না করা পর্যন্ত পরবর্তী step-এ যাবেন না।
+
+Learn Flutter Link: [Learn Flutter](https://www.classcentral.com/classroom/youtube-flutter-bangla-tutorial-full-course-59589/61cb7468175e1)
