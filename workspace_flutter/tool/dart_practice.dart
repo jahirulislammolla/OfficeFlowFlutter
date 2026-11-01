@@ -1,0 +1,28 @@
+void main(){
+    const companyName = 'Digit Gate IT';
+    String employeeName = 'Jahir';
+    int completedTasks = 5;
+    double salary = 25000.50;
+    bool isActive = true;
+
+    print('$employeeName works at $companyName');
+
+    print('Salary: $salary');
+
+    if (isActive && completedTasks >= 5) {
+        print('Good progress!');
+    }
+
+    final tasks= ['Login page', 'Dashboard', 'Attendance'];
+
+    for (final task in tasks)
+    {
+        print(task);
+    }
+    
+    print(greet(employeeName));
+}
+
+String greet(String name){
+    return 'Hello $name!';
+}
