@@ -21,6 +21,23 @@ void main(){
     }
     
     print(greet(employeeName));
+
+    final employeeJair = Employee(id: '11111', name: 'jahir', designation: 'Senior Web Developer');
+    print(employeeJair.id);
+    print(employeeJair.name);
+    print(employeeJair.designation);
+}
+
+class Employee {
+  final String id;
+  final String name;
+  final String? designation;
+
+  const Employee({
+    required this.id,
+    required this.name,
+    required this.designation,
+  });
 }
 
 String greet(String name){
