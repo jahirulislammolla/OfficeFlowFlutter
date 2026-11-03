@@ -9,6 +9,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final String studentName = 'Jayed Khan';
+    const int studentId = 1001;
+    double marks = 85.5;
+    bool isActive = true;
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -17,15 +21,25 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-            title: Text('Office Flow'),
+            title: const Text('Student Profile'),
         ),
-        body: Center(
+        body: Padding( 
+          padding: const EdgeInsets.all(20),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text('You have pushed the button this many times:'),
+              Text('Name: $studentName'),
+              Text('ID: $studentId'),
+              Text('Marks: $marks'),
+              Text(
+                'Status: ${isActive ? "Active" : "Inactive"}',
+              ),
+              Text(
+                'Result: ${marks >= 40 ? "Passed" : "Failed"}',
+              ),
             ],
-          ),
-        ),
+          )
+        )
         
       ),
     );
